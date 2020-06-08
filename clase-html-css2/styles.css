@@ -1,0 +1,21 @@
+h1 {
+
+    color: red;
+}
+
+.termino_con_mas_palabras {
+    color: blue;
+}
+
+#unico_por_html {
+    font-size: 25px;
+    color: purple;
+}
+
+ul .primero {
+    color: olive;
+}
+
+li.segundo {
+    color: brown;
+}

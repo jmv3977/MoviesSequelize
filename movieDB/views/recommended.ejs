@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommended</title>
+</head>
+  <body>
+    <h1>Listado de Películas Recomendadas</h1>
+    <ul>
+        <% for (let i = 0; i < recommended.length; i++) {  %> 
+           <li>
+              <a href="/movies/detail/<%= recommended[i].id %>"><%= recommended[i].title %></a>
+            </li>
+
+
+        <% } %> 
+        </ul>
+
+   </body>
+
+    
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador</title>
+</head>
+
+  <body>
+      
+    <form action="/movies/search" method="POST">
+        <input type="text" name="buscador">
+        <select name="filter">
+          <option value="rating">Rating</option>
+          <option value="length">Duración</option>
+          <option value="awards">Premio</option>
+        </select>
+        
+    
+      </form>
+
+  <h2>Resultados de la búsqueda: <%= movies.length %> </h2>
+  			<% if(movies.length > 0) { %> 
+				<% movies.forEach(function(detail){ %>
+				
+						<a href="/movies/detail/<%= movies.id %> ">
+    
+
+    
+   </body>
+
+    
+</html>
