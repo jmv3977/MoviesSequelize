@@ -7,25 +7,17 @@
 </head>
 
   <body>
-      
-    <form action="/movies/search" method="POST">
+
+    <form action="/movies/search" method="GET">
         <input type="text" name="buscador">
+
         <select name="filter">
           <option value="rating">Rating</option>
           <option value="length">Duración</option>
           <option value="awards">Premio</option>
         </select>
         
-    
-      </form>
-
-  <h2>Resultados de la búsqueda: <%= movies.length %> </h2>
-  			<% if(movies.length > 0) { %> 
-				<% movies.forEach(function(detail){ %>
-				
-						<a href="/movies/detail/<%= movies.id %> ">
-    
-
+    </form>
     
    </body>
 

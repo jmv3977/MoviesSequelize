@@ -7,6 +7,6 @@ router.get('/detail/:id', moviesController.detail)
 router.get('/new', moviesController.new)
 router.get('/recommended', moviesController.recommended)
 router.get('/search', moviesController.search)
-router.post('/search', moviesController.search)
+router.post('/search', moviesController.searchProcess)
 
 module.exports = router;

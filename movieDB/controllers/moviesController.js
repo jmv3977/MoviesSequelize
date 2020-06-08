@@ -45,8 +45,12 @@ const moviesController = {
                 .catch(e=> console.log(e))
             },
 
+            search: function(req, res) {
+                return res.render('search');
+          
+            },
             
-            search: (req, res) => {
+            searchProcess: (req, res) => {
                 Movie.findAll({
 
                  where: {
